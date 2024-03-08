@@ -1,8 +1,9 @@
 - name: Hello World Sample
   hosts: all
+  vars_files: "/var/lib/awx/projects/secret.yml"
   tasks:
     - name: Hello Message
       debug:
         msg: "Hello World!"
-    - name: check secret file
-      include_vars: "/var/lib/awx/projects/secret.txt"
+        msg: "{{ username }}"
+        msg: "{{ password }}"    
