@@ -5,4 +5,4 @@
       debug:
         msg: "Hello World!"
     - name: check secret file
-      include_vars: "/var/lib/awx/projects/secret.yml"
+      include_vars: "/var/lib/awx/projects/secret.txt"
